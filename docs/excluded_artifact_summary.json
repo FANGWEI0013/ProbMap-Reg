@@ -1,0 +1,93 @@
+{
+  "scope_note": "Counts refer only to the listed known external artifacts, not an unrestricted computer-wide inventory. Duplicate model copies are counted as physical files. Nothing listed is in the publication allowlist.",
+  "checkpoint_files": 12,
+  "checkpoint_bytes": 2274363331,
+  "checkpoint_items": [
+    {
+      "basename": "2024-06-06 19.02.56_Model_heatmap_Unet.h5",
+      "bytes": 372626944,
+      "purpose": "HDF5 Keras full model",
+      "exists": true
+    },
+    {
+      "basename": "2024-06-06 19.02.56_Model_heatmap_Unet.h5",
+      "bytes": 372626944,
+      "purpose": "HDF5 Keras full model",
+      "exists": true
+    },
+    {
+      "basename": "2023-10-11 13.19.22_Model_VesselSegmentation.h5",
+      "bytes": 372613120,
+      "purpose": "HDF5 Keras full model",
+      "exists": true
+    },
+    {
+      "basename": "2023-10-11 13.19.22_Model_VesselSegmentation_weights.h5",
+      "bytes": 124217504,
+      "purpose": "HDF5 weights only",
+      "exists": true
+    },
+    {
+      "basename": "2024-06-06 19.02.56_Model_heatmap_Unet.h5",
+      "bytes": 372626944,
+      "purpose": "HDF5 Keras full model",
+      "exists": true
+    },
+    {
+      "basename": "2024-06-06 19.02.56_Model_heatmap_Unet_weights.h5",
+      "bytes": 124222112,
+      "purpose": "HDF5 weights only",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation_best.pth",
+      "bytes": 124263242,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation_last.pth",
+      "bytes": 124263242,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation_best.pth",
+      "bytes": 124263242,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation_last.pth",
+      "bytes": 124263242,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation.pth",
+      "bytes": 30798705,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    },
+    {
+      "basename": "unet_bifurcation.pth",
+      "bytes": 7578090,
+      "purpose": "PyTorch filename/container; deliberately not unpickled",
+      "exists": true
+    }
+  ],
+  "dataset_scopes": [
+    {
+      "scope": "Recovered historical FIVES Training_Dataset (inputs and heatmaps, both splits)",
+      "files": 1200,
+      "bytes": 69529967
+    },
+    {
+      "scope": "Existing project FIRE root (pair filenames, controls and masks)",
+      "files": 405,
+      "bytes": 501293176
+    }
+  ],
+  "dataset_files": 1605,
+  "dataset_bytes": 570823143
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-19",
+  "all_expected_exit_codes": true,
+  "commands": 24,
+  "unit_tests": 12,
+  "science_modules_unchanged": true,
+  "python_files": 20,
+  "no_training": true,
+  "no_full_fire": true,
+  "round": 3,
+  "os": "Windows 11 Home 25H2 build 26200.9711",
+  "execution": "CPU; TensorFlow GPU count zero",
+  "versions": {
+    "Python": "3.9.25",
+    "TensorFlow": "2.10.1",
+    "Keras": "2.10.0",
+    "OpenCV": "4.8.1",
+    "NumPy": "1.23.5",
+    "SciPy": "1.10.1",
+    "Matplotlib": "3.7.5"
+  },
+  "fresh_complete_install_verified": false,
+  "venv_creation_verified": true,
+  "requirements_pip_check": "No broken requirements found",
+  "recorded_results": "round3_results.json",
+  "command_log": "round3_commands.json",
+  "original_tests": 9,
+  "new_packaging_tests": 3,
+  "final_desktop_tests": "12 passed; allowlist equals all 64 Git untracked files; zero tracked/staged/commits/remotes; all hashes matched"
+}

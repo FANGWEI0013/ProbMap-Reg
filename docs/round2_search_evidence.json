@@ -1,0 +1,88 @@
+{
+  "desktop_7z_source_crc_size_matches": [
+    {
+      "archive_crc": "7364A9D7",
+      "local_crc": "7364A9D7",
+      "identical_crc_and_size": true,
+      "sha256": "f5cb0a64b2d2700ef60a2be8c5ebfdf0fc44d9e0c64ee12919346cb056aa5458",
+      "filename": "main.txt"
+    },
+    {
+      "archive_crc": "9EC65E1A",
+      "local_crc": "9EC65E1A",
+      "identical_crc_and_size": true,
+      "sha256": "2954241ab4c0e202654c78ef2032c9c38bfa10785f526abda8c9929bd6f9cd2e",
+      "filename": "model.txt"
+    },
+    {
+      "archive_crc": "C555F415",
+      "local_crc": "C555F415",
+      "identical_crc_and_size": true,
+      "sha256": "ff03f21edff5c603df8735561d486a512e0e81a427a122efe39b6de7f7f6fdcf",
+      "filename": "graphs.py"
+    },
+    {
+      "archive_crc": "C70043F0",
+      "local_crc": "C70043F0",
+      "identical_crc_and_size": true,
+      "sha256": "484c0145ae70b481881e9f7fd16a98e771a80cb8ce1c8141dd724a9fc63a6c3c",
+      "filename": "main.py"
+    },
+    {
+      "archive_crc": "C135EC77",
+      "local_crc": "C135EC77",
+      "identical_crc_and_size": true,
+      "sha256": "e599aa2314003e5b594f17ccb1f5810f1f9e9a73114ad00d7896d0686adb868c",
+      "filename": "main_batch.py"
+    },
+    {
+      "archive_crc": "5891B740",
+      "local_crc": "5891B740",
+      "identical_crc_and_size": true,
+      "sha256": "96d96caae8b1ce185ff6437f733dcbe025e5bef409df748c622dab1df708c1f7",
+      "filename": "utils.py"
+    }
+  ],
+  "nested_zip_code_indicators": [
+    {
+      "members": 43,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_1"
+    },
+    {
+      "members": 9,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_2"
+    },
+    {
+      "members": 33,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_3"
+    },
+    {
+      "members": 23,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_4"
+    },
+    {
+      "members": 225,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_5"
+    },
+    {
+      "members": 272,
+      "code_indicators": [],
+      "archive_alias": "privately_preserved_research_archive_6"
+    }
+  ],
+  "targeted_history_matches": 0,
+  "bytecode_verified_defaults": {
+    "probability_threshold": 90,
+    "ransac_threshold": 30,
+    "source_versions": [
+      "cpython-39",
+      "cpython-310"
+    ]
+  },
+  "rar_limitations": "Volume 2 starts with zero bytes instead of RAR signature and cannot be opened independently. Other volumes provide partial inventories. Archive absence is not established exhaustively; no archive was repaired or rewritten."
+}

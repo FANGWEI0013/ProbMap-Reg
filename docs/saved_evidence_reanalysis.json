@@ -1,0 +1,143 @@
+{
+  "saved_result_reanalysis": [
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "category": "S",
+      "n": 71,
+      "point_auc": 0.1408450704225352,
+      "actual_bootstrap_mean_diagnostic": 0.14153521126760563,
+      "ci_lower": 0.09180985915492959,
+      "ci_upper": 0.19380281690140844
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "category": "P",
+      "n": 49,
+      "point_auc": 0.0,
+      "actual_bootstrap_mean_diagnostic": 0.0,
+      "ci_lower": 0.0,
+      "ci_upper": 0.0
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "category": "A",
+      "n": 14,
+      "point_auc": 0.16714285714285715,
+      "actual_bootstrap_mean_diagnostic": 0.16709857142857143,
+      "ci_lower": 0.057142857142857134,
+      "ci_upper": 0.28432142857142856
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "category": "ALL",
+      "n": 134,
+      "point_auc": 0.09208955223880597,
+      "actual_bootstrap_mean_diagnostic": 0.09206820895522387,
+      "ci_lower": 0.060585820895522384,
+      "ci_upper": 0.12493283582089552
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "category": "S",
+      "n": 71,
+      "point_auc": 0.33323943661971833,
+      "actual_bootstrap_mean_diagnostic": 0.33367605633802816,
+      "ci_lower": 0.2611197183098592,
+      "ci_upper": 0.4056338028169014
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "category": "P",
+      "n": 49,
+      "point_auc": 0.0016326530612244896,
+      "actual_bootstrap_mean_diagnostic": 0.001636734693877551,
+      "ci_lower": 0.0,
+      "ci_upper": 0.004897959183673469
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "category": "A",
+      "n": 14,
+      "point_auc": 0.17428571428571427,
+      "actual_bootstrap_mean_diagnostic": 0.17282285714285714,
+      "ci_lower": 0.06142857142857142,
+      "ci_upper": 0.3057142857142857
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "category": "ALL",
+      "n": 134,
+      "point_auc": 0.1953731343283582,
+      "actual_bootstrap_mean_diagnostic": 0.19608641791044779,
+      "ci_lower": 0.14865298507462688,
+      "ci_upper": 0.243
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "category": "S",
+      "n": 71,
+      "point_auc": 0.9078873239436619,
+      "actual_bootstrap_mean_diagnostic": 0.9076788732394366,
+      "ci_lower": 0.8926760563380282,
+      "ci_upper": 0.9202816901408452
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "category": "P",
+      "n": 49,
+      "point_auc": 0.19428571428571428,
+      "actual_bootstrap_mean_diagnostic": 0.1954812244897959,
+      "ci_lower": 0.14040816326530614,
+      "ci_upper": 0.256734693877551
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "category": "A",
+      "n": 14,
+      "point_auc": 0.7228571428571428,
+      "actual_bootstrap_mean_diagnostic": 0.7279085714285715,
+      "ci_lower": 0.6342857142857143,
+      "ci_upper": 0.7942857142857143
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "category": "ALL",
+      "n": 134,
+      "point_auc": 0.6276119402985075,
+      "actual_bootstrap_mean_diagnostic": 0.6274710447761195,
+      "ci_lower": 0.5671455223880598,
+      "ci_upper": 0.6874701492537313
+    }
+  ],
+  "historical_hardcoded_graph_overall_auc": 0.6259472710870326,
+  "historical_graph_category_aucs": {
+    "success_our_S_sim": 0.9027758018403838,
+    "success_our_P_sim": 0.19796258468590736,
+    "success_our_A_sim": 0.7199775533040874,
+    "success_our_sim": 0.6259472710870326
+  },
+  "note": "Bootstrap diagnostic mean calculated only for audit, recovered public bootstrap implementation was not changed.",
+  "historical_saved_errors": {
+    "count": 134,
+    "category_aucs_trapezoid": {
+      "S": 0.9028169014084506,
+      "P": 0.1979591836734694,
+      "A": 0.72,
+      "ALL": 0.6259701492537313
+    },
+    "a01": {
+      "pair_id": "A01",
+      "error": 2.9245290249672298
+    },
+    "p48": {
+      "pair_id": "P48",
+      "error": 28.613489177531893
+    }
+  },
+  "historical_curve_agreement": {
+    "S": true,
+    "P": true,
+    "A": true,
+    "ALL": true
+  }
+}

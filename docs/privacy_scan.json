@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-29",
+  "scope": "Exactly 68 approved files staged, including LICENSE",
+  "pattern_categories": [
+    "personal_absolute_path",
+    "github_token",
+    "other_token",
+    "private_key",
+    "credential_assignment",
+    "private_host",
+    "patient_identifier"
+  ],
+  "findings": [],
+  "files_over_10_MB": [],
+  "binary_or_NUL_content": [],
+  "unexpected_formats": [],
+  "data_files": 0,
+  "checkpoint_files": 0,
+  "notebooks": 0,
+  "commits_to_scan": 0,
+  "source_authorship": "AUTHOR_CONFIRMED",
+  "license": "MIT_APPROVED",
+  "limit": "Heuristic scan plus explicit staged path/blob verification; not an exhaustive guarantee"
+}

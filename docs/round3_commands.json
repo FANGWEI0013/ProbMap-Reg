@@ -1,0 +1,357 @@
+{
+  "date": "2026-10-19",
+  "cwd": "repository root",
+  "paths": "Placeholders replace actual external data/model/output paths; full private logs retained outside candidate",
+  "environment": "Python 3.9.25 compatible pre-existing environment; TEMP/TMP set to writable audit directory",
+  "commands": [
+    {
+      "id": "unit_tests_12",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_bootstrap_statistics",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\bootstrap_statistics.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_evaluate_fire",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\evaluate_fire.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_infer",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\infer.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_plot_success_curves",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\plot_success_curves.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_run_reconstruction",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\run_reconstruction.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_train_unet",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\train_unet.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_engine_run_proposed.py",
+      "argv": [
+        "python",
+        "-B",
+        ".\\src\\reconstruction\\run_proposed.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "help_engine_run_ablation_probmap_vs_sift.py",
+      "argv": [
+        "python",
+        "-B",
+        ".\\src\\reconstruction\\run_ablation_probmap_vs_sift.py",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "venv_creation",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "venv",
+        "<ISOLATED_ENV>"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "pip_check",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "environment_imports",
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import importlib,json,platform,sys; from importlib import metadata; names=['numpy','scipy','cv2','tensorflow','keras','matplotlib']; info={'python':platform.python_version(),'os':platform.platform(),'modules':{n:getattr(importlib.import_module(n),'__version__','unknown') for n in names},'packages':{}}; print(json.dumps(info)); import tensorflow as tf; print('GPUS',len(tf.config.list_physical_devices('GPU')))"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "missing_checkpoint",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "proposed",
+        "--output-dir",
+        "<OUTPUT_ROOT>\\negative"
+      ],
+      "returncode": 2,
+      "expected_returncode": 2,
+      "passed": true
+    },
+    {
+      "id": "infer_A01",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/infer.py",
+        "--image",
+        "<FIRE_ROOT>\\Images\\A01_1.jpg",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>\\inference_A01"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "one_pair_A01",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "proposed",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--fire-root",
+        "<FIRE_ROOT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>",
+        "--pair",
+        "A01",
+        "--save-vis"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "small_fire",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "proposed",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--fire-root",
+        "<FIRE_ROOT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>",
+        "--small-test",
+        "--save-vis"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "P48",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "proposed",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--fire-root",
+        "<FIRE_ROOT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>",
+        "--pair",
+        "P48",
+        "--no-vis"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "sift_ablation",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "ablation",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--fire-root",
+        "<FIRE_ROOT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>",
+        "--small-test",
+        "--no-vis"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "evaluate_fire",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/evaluate_fire.py",
+        "--raw-csv",
+        "<OUTPUT_ROOT>\\ablation_probmap_vs_sift\\raw_pairs.csv",
+        "--output",
+        "<OUTPUT_ROOT>\\evaluation.csv"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "legacy_bootstrap",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "bootstrap",
+        "--output-dir",
+        "<OUTPUT_ROOT>"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "explicit_bootstrap",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/bootstrap_statistics.py",
+        "--raw-csv",
+        "<OUTPUT_ROOT>\\ablation_probmap_vs_sift\\raw_pairs.csv",
+        "--output",
+        "<OUTPUT_ROOT>\\bootstrap_statistics.csv"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "plot_success",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/plot_success_curves.py",
+        "--raw-csv",
+        "<OUTPUT_ROOT>\\ablation_probmap_vs_sift\\raw_pairs.csv",
+        "--output",
+        "<OUTPUT_ROOT>\\success_curves.png"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "external_training_help",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/train_unet.py",
+        "--trainer-script",
+        "<AUTHORIZED_TRAINER>",
+        "--",
+        "--help"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    },
+    {
+      "id": "module_imports_and_failure_row",
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import sys,json,math;sys.path.insert(0,'src/reconstruction');import config,utils_eval,utils_features,utils_matching,utils_model,utils_transform,utils_vis,run_proposed,run_ablation_probmap_vs_sift,analyze_bootstrap_ci,analyze_failure_cases; r=run_proposed.process_pair(None,'A00',False);assert r['status']=='failed' and math.isinf(r['error']);print(json.dumps({'status':r['status'],'error':'inf','message_kind':'missing image','source_to_target':'image1_to_image2'}))"
+      ],
+      "returncode": 0,
+      "expected_returncode": 0,
+      "passed": true
+    }
+  ]
+}

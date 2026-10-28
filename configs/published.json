@@ -1,0 +1,80 @@
+{
+  "reporting_reference": "Local IEEE Access accepted-author PDF; DOI footer 10.1109/ACCESS.2026.3741071",
+  "input_size": [
+    480,
+    480
+  ],
+  "channel": "green",
+  "pseudo_label_sigma": 5,
+  "probability_threshold_uint8": 80,
+  "hog_window": [
+    16,
+    16
+  ],
+  "hog_dimensions": 128,
+  "ransac_residual_px_original_scale": 20,
+  "transform": "similarity",
+  "training": {
+    "dataset": "FIVES",
+    "total": 600,
+    "train": 480,
+    "validation": 120,
+    "epochs": 50,
+    "learning_rate": 0.0001,
+    "output_activation": "linear"
+  },
+  "fire_counts": {
+    "S": 71,
+    "P": 49,
+    "A": 14,
+    "total": 134
+  },
+  "main_auc": {
+    "S": 0.902,
+    "P": 0.198,
+    "A": 0.72,
+    "Overall": 0.626
+  },
+  "bootstrap": {
+    "iterations": 1000,
+    "proposed_mean_overall": 0.628,
+    "proposed_ci": [
+      0.567,
+      0.687
+    ]
+  },
+  "runtime_seconds_per_pair": 2.2,
+  "ablation_reported": {
+    "SIFT_NN": {
+      "S": 0.141,
+      "P": 0.0,
+      "A": 0.167,
+      "bootstrap_mean_overall": 0.092,
+      "ci95": [
+        0.061,
+        0.125
+      ]
+    },
+    "SIFT_ratio_mutual": {
+      "S": 0.333,
+      "P": 0.002,
+      "A": 0.174,
+      "bootstrap_mean_overall": 0.195,
+      "ci95": [
+        0.149,
+        0.243
+      ]
+    },
+    "Proposed": {
+      "S": 0.902,
+      "P": 0.198,
+      "A": 0.72,
+      "bootstrap_mean_overall": 0.628,
+      "ci95": [
+        0.567,
+        0.687
+      ]
+    }
+  },
+  "metadata_only": true
+}
