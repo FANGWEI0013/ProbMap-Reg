@@ -1,0 +1,15 @@
+{
+  "kind": "Recovered recent code; not verified historical implementation",
+  "probability_threshold": 80,
+  "ransac_threshold_px": 20,
+  "input_size": 480,
+  "hog_library": "OpenCV",
+  "hog_dimensions": 128,
+  "coordinate_rounding": "none (float32)",
+  "similarity_fit": "OpenCV estimateAffinePartial2D returned matrix",
+  "auc": "trapezoid on integer thresholds 0..25, <= comparison",
+  "bootstrap_iterations": 1000,
+  "bootstrap_seed": 20260713,
+  "bootstrap_reported_center": "original-sample AUC; bootstrap mean not calculated by recovered script",
+  "sift_ratio": 0.75
+}

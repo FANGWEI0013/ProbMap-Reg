@@ -1,0 +1,7 @@
+# Approved-index safety scan — 2026-10-29
+
+All 68 approved publication files, including LICENSE, were scanned as UTF-8 text and checked against the explicit Git index. Every staged blob must equal the reviewed working bytes and every path must be in the positive allowlist. Checks cover credential/token/private-key signatures, personal absolute paths, private-host and patient-identifier patterns, NUL/binary content, notebooks, dataset/model formats and files larger than 10 MB. No matching warning was found.
+
+No FIRE/FIVES images, masks, control annotations, learned weights, checkpoint binaries, raw benchmark outputs, private research notes/inventories, original paper/archive bytes, environments, caches or notebooks are staged. Model graph/config metadata contains architecture descriptions, not learned weight arrays. Prior quarantine and private snapshots remain outside Git. Independently licensed dependencies/materials are not relicensed by the approved MIT source license.
+
+Git index scope: exactly the approved 68-file allowlist, all additions, no unstaged or untracked files. LICENSE retains its original standard MIT text with Copyright (c) 2026 Wei Fang. There are zero commits/remotes and no committed history to scan. No commit, remote creation, push or visibility operation was performed. Pattern scanning is limited evidence, not an exhaustive guarantee; ignore rules do not replace the positive index check.

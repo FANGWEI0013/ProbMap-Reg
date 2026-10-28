@@ -1,0 +1,240 @@
+{
+  "profiles_are_diagnostics_not_recovered_versions": true,
+  "pairs": [
+    {
+      "pair": "A01",
+      "results": [
+        {
+          "profile": "historical_native",
+          "threshold": 90,
+          "ransac_px": 30,
+          "hog": "skimage",
+          "coordinate_scaling": "rounded",
+          "final_fit": "least_squares",
+          "points": [
+            43,
+            53
+          ],
+          "matches": 43,
+          "inliers": 21,
+          "error": 2.924529024967268
+        },
+        {
+          "profile": "historical_80_20_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "skimage",
+          "coordinate_scaling": "rounded",
+          "final_fit": "least_squares",
+          "points": [
+            44,
+            53
+          ],
+          "matches": 44,
+          "inliers": 21,
+          "error": 2.924529024967268
+        },
+        {
+          "profile": "reconstruction_native",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            44,
+            53
+          ],
+          "matches": 44,
+          "inliers": 22,
+          "error": 4.657976795045209
+        },
+        {
+          "profile": "reconstruction_90_30_diagnostic",
+          "threshold": 90,
+          "ransac_px": 30,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            43,
+            53
+          ],
+          "matches": 43,
+          "inliers": 22,
+          "error": 4.657976795045339
+        },
+        {
+          "profile": "reconstruction_skimage_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "skimage",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            44,
+            53
+          ],
+          "matches": 44,
+          "inliers": 21,
+          "error": 3.015169651056956
+        },
+        {
+          "profile": "reconstruction_rounding_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "rounded",
+          "final_fit": "opencv",
+          "points": [
+            44,
+            53
+          ],
+          "matches": 44,
+          "inliers": 22,
+          "error": 4.52333805629648
+        },
+        {
+          "profile": "reconstruction_refit_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "least_squares",
+          "points": [
+            44,
+            53
+          ],
+          "matches": 44,
+          "inliers": 22,
+          "error": 4.657976795039753
+        }
+      ],
+      "fpe_diagnostics": {
+        "points": 44,
+        "historical_32_bins_point_extent": 5.4139770731827515,
+        "fixed_32_pixel_bins_at_480_scale": 4.896820539042673,
+        "fixed_32_pixel_bins_at_original_scale": 5.4139770731827515,
+        "table_reproduction_claim": false
+      }
+    },
+    {
+      "pair": "P48",
+      "results": [
+        {
+          "profile": "historical_native",
+          "threshold": 90,
+          "ransac_px": 30,
+          "hog": "skimage",
+          "coordinate_scaling": "rounded",
+          "final_fit": "least_squares",
+          "points": [
+            41,
+            38
+          ],
+          "matches": 41,
+          "inliers": 8,
+          "error": 28.61348917753181
+        },
+        {
+          "profile": "historical_80_20_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "skimage",
+          "coordinate_scaling": "rounded",
+          "final_fit": "least_squares",
+          "points": [
+            42,
+            38
+          ],
+          "matches": 42,
+          "inliers": 8,
+          "error": 24.468413741354016
+        },
+        {
+          "profile": "reconstruction_native",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            42,
+            38
+          ],
+          "matches": 42,
+          "inliers": 9,
+          "error": 1148.2233810909145
+        },
+        {
+          "profile": "reconstruction_90_30_diagnostic",
+          "threshold": 90,
+          "ransac_px": 30,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            41,
+            38
+          ],
+          "matches": 41,
+          "inliers": 11,
+          "error": 17.471144076487008
+        },
+        {
+          "profile": "reconstruction_skimage_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "skimage",
+          "coordinate_scaling": "float",
+          "final_fit": "opencv",
+          "points": [
+            42,
+            38
+          ],
+          "matches": 42,
+          "inliers": 8,
+          "error": 24.507109941976463
+        },
+        {
+          "profile": "reconstruction_rounding_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "rounded",
+          "final_fit": "opencv",
+          "points": [
+            42,
+            38
+          ],
+          "matches": 42,
+          "inliers": 9,
+          "error": 1148.367370021262
+        },
+        {
+          "profile": "reconstruction_refit_only_diagnostic",
+          "threshold": 80,
+          "ransac_px": 20,
+          "hog": "opencv",
+          "coordinate_scaling": "float",
+          "final_fit": "least_squares",
+          "points": [
+            42,
+            38
+          ],
+          "matches": 42,
+          "inliers": 9,
+          "error": 1148.2233810907496
+        }
+      ],
+      "fpe_diagnostics": {
+        "points": 42,
+        "historical_32_bins_point_extent": 5.2494602799216175,
+        "fixed_32_pixel_bins_at_480_scale": 4.993391529870106,
+        "fixed_32_pixel_bins_at_original_scale": 5.39231742277876,
+        "table_reproduction_claim": false
+      }
+    }
+  ],
+  "control_fractional_values": 0
+}
