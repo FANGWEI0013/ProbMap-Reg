@@ -1,0 +1,99 @@
+{
+  "folder_statistics": [
+    {
+      "folder_alias": "(1) Training_set_green_channel_preprocessed",
+      "count": 480,
+      "nonzero_fraction_min_max": [
+        1.0,
+        1.0
+      ],
+      "mean_intensity_min_max": [
+        20.344457465277777,
+        99.62344618055556
+      ],
+      "representative": {
+        "filename": "100_A.png",
+        "nonzero_fraction": 1.0,
+        "mean": 46.49801649305556,
+        "std": 32.330258867302796,
+        "pixels_above_80_fraction": 0.12697916666666667
+      }
+    },
+    {
+      "folder_alias": "(2) Training_labels",
+      "count": 480,
+      "nonzero_fraction_min_max": [
+        0.0006987847222222222,
+        0.014244791666666666
+      ],
+      "mean_intensity_min_max": [
+        0.07863715277777777,
+        1.2789930555555555
+      ],
+      "representative": {
+        "filename": "100_A.png",
+        "nonzero_fraction": 0.00734375,
+        "mean": 0.6425086805555555,
+        "std": 9.968800912004841,
+        "pixels_above_80_fraction": 0.003246527777777778
+      }
+    },
+    {
+      "folder_alias": "(3) Validation_set_green_channel_preprocessed",
+      "count": 120,
+      "nonzero_fraction_min_max": [
+        0.0,
+        0.013311631944444444
+      ],
+      "mean_intensity_min_max": [
+        0.0,
+        1.2473914930555556
+      ],
+      "representative": {
+        "filename": "121_A.png",
+        "nonzero_fraction": 0.00782986111111111,
+        "mean": 0.7538411458333333,
+        "std": 10.867281763926568,
+        "pixels_above_80_fraction": 0.003845486111111111
+      }
+    },
+    {
+      "folder_alias": "(4) Validation_labels",
+      "count": 120,
+      "nonzero_fraction_min_max": [
+        1.0,
+        1.0
+      ],
+      "mean_intensity_min_max": [
+        18.44904079861111,
+        103.14614583333334
+      ],
+      "representative": {
+        "filename": "121_A.png",
+        "nonzero_fraction": 1.0,
+        "mean": 89.91438368055556,
+        "std": 53.705805277830905,
+        "pixels_above_80_fraction": 0.721171875
+      }
+    }
+  ],
+  "one_pair_model_diagnostic": {
+    "sample": "121_A.png",
+    "declared_validation_input_visual_content": "sparse bifurcation heatmap",
+    "declared_validation_target_visual_content": "fundus green-channel image",
+    "declared_pair_mse": 10962.794921875,
+    "role_reversed_pair_mse_diagnostic_only": 41.22111129760742,
+    "prediction_ranges": [
+      [
+        0.033827461302280426,
+        5.915339469909668
+      ],
+      [
+        0.033827461302280426,
+        270.9454345703125
+      ]
+    ],
+    "actual_label_roles_changed": false,
+    "interpretation": "Folders appear reversed by semantic image inspection and whole-folder intensity distributions. Correct paths in original training runtime are not established. Diagnostic role reversal is not applied to training code."
+  }
+}

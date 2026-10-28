@@ -1,0 +1,134 @@
+[
+  {
+    "experiment": "Without_ProbabilityMap_SIFT",
+    "category": "S",
+    "n_pairs": "71",
+    "point_auc": "0.1408450704225352",
+    "bootstrap_mean_auc": "0.14153521126760563",
+    "ci_lower_95": "0.09180985915492959",
+    "ci_upper_95": "0.19380281690140844",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Without_ProbabilityMap_SIFT",
+    "category": "P",
+    "n_pairs": "49",
+    "point_auc": "0.0",
+    "bootstrap_mean_auc": "0.0",
+    "ci_lower_95": "0.0",
+    "ci_upper_95": "0.0",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Without_ProbabilityMap_SIFT",
+    "category": "A",
+    "n_pairs": "14",
+    "point_auc": "0.16714285714285715",
+    "bootstrap_mean_auc": "0.16709857142857143",
+    "ci_lower_95": "0.057142857142857134",
+    "ci_upper_95": "0.28432142857142856",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Without_ProbabilityMap_SIFT",
+    "category": "ALL",
+    "n_pairs": "134",
+    "point_auc": "0.09208955223880597",
+    "bootstrap_mean_auc": "0.09206820895522387",
+    "ci_lower_95": "0.060585820895522384",
+    "ci_upper_95": "0.12493283582089552",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "SIFT_Enhanced",
+    "category": "S",
+    "n_pairs": "71",
+    "point_auc": "0.33323943661971833",
+    "bootstrap_mean_auc": "0.33367605633802816",
+    "ci_lower_95": "0.2611197183098592",
+    "ci_upper_95": "0.4056338028169014",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "SIFT_Enhanced",
+    "category": "P",
+    "n_pairs": "49",
+    "point_auc": "0.0016326530612244896",
+    "bootstrap_mean_auc": "0.001636734693877551",
+    "ci_lower_95": "0.0",
+    "ci_upper_95": "0.004897959183673469",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "SIFT_Enhanced",
+    "category": "A",
+    "n_pairs": "14",
+    "point_auc": "0.17428571428571427",
+    "bootstrap_mean_auc": "0.17282285714285714",
+    "ci_lower_95": "0.06142857142857142",
+    "ci_upper_95": "0.3057142857142857",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "SIFT_Enhanced",
+    "category": "ALL",
+    "n_pairs": "134",
+    "point_auc": "0.1953731343283582",
+    "bootstrap_mean_auc": "0.19608641791044779",
+    "ci_lower_95": "0.14865298507462688",
+    "ci_upper_95": "0.243",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Full_ProbabilityMap",
+    "category": "S",
+    "n_pairs": "71",
+    "point_auc": "0.9078873239436619",
+    "bootstrap_mean_auc": "0.9076788732394366",
+    "ci_lower_95": "0.8926760563380282",
+    "ci_upper_95": "0.9202816901408452",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Full_ProbabilityMap",
+    "category": "P",
+    "n_pairs": "49",
+    "point_auc": "0.19428571428571428",
+    "bootstrap_mean_auc": "0.1954812244897959",
+    "ci_lower_95": "0.14040816326530614",
+    "ci_upper_95": "0.256734693877551",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Full_ProbabilityMap",
+    "category": "A",
+    "n_pairs": "14",
+    "point_auc": "0.7228571428571428",
+    "bootstrap_mean_auc": "0.7279085714285715",
+    "ci_lower_95": "0.6342857142857143",
+    "ci_upper_95": "0.7942857142857143",
+    "iterations": "1000",
+    "seed": "20260713"
+  },
+  {
+    "experiment": "Full_ProbabilityMap",
+    "category": "ALL",
+    "n_pairs": "134",
+    "point_auc": "0.6276119402985075",
+    "bootstrap_mean_auc": "0.6274710447761195",
+    "ci_lower_95": "0.5671455223880598",
+    "ci_upper_95": "0.6874701492537313",
+    "iterations": "1000",
+    "seed": "20260713"
+  }
+]

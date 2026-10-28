@@ -1,0 +1,110 @@
+{
+  "layers": 39,
+  "parameter_count": 31032837,
+  "model_architecture_config_matches_checkpoint": true,
+  "input_shape": [
+    null,
+    480,
+    480,
+    3
+  ],
+  "output_shape": [
+    null,
+    480,
+    480,
+    1
+  ],
+  "optimizer": "Adam",
+  "learning_rate": 9.999999747378752e-05,
+  "loss": "mse",
+  "optimizer_iterations_saved": 24000,
+  "optimizer_iterations_interpretation": "Consistent with 50 epochs x 480 batches (batch size 1), not independent proof of data lineage",
+  "loaders": [
+    {
+      "image_folder_alias": "(1) Training_set_green_channel_preprocessed",
+      "mask_folder_alias": "(2) Training_labels",
+      "images": 480,
+      "masks": 480,
+      "sorted_filenames_match": true,
+      "sample_image_shape": [
+        480,
+        480,
+        3
+      ],
+      "sample_mask_shape": [
+        480,
+        480,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_dtype": "float32",
+      "image_range": [
+        0.0117647061124444,
+        1.0
+      ],
+      "mask_range": [
+        0.0,
+        255.0
+      ],
+      "sample_image_channels_equal": true,
+      "tf_batch_shapes": [
+        [
+          1,
+          480,
+          480,
+          3
+        ],
+        [
+          1,
+          480,
+          480,
+          1
+        ]
+      ]
+    },
+    {
+      "image_folder_alias": "(3) Validation_set_green_channel_preprocessed",
+      "mask_folder_alias": "(4) Validation_labels",
+      "images": 120,
+      "masks": 120,
+      "sorted_filenames_match": true,
+      "sample_image_shape": [
+        480,
+        480,
+        3
+      ],
+      "sample_mask_shape": [
+        480,
+        480,
+        1
+      ],
+      "image_dtype": "float32",
+      "mask_dtype": "float32",
+      "image_range": [
+        0.0,
+        1.0
+      ],
+      "mask_range": [
+        1.0,
+        255.0
+      ],
+      "sample_image_channels_equal": true,
+      "tf_batch_shapes": [
+        [
+          1,
+          480,
+          480,
+          3
+        ],
+        [
+          1,
+          480,
+          480,
+          1
+        ]
+      ]
+    }
+  ],
+  "configuration_differences": [],
+  "inbound_topology_matches": true
+}

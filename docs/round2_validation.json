@@ -1,0 +1,77 @@
+{
+  "round": 2,
+  "date": "2026-10-13",
+  "python": "3.9.25",
+  "syntax_python_files": 18,
+  "unit_tests": 9,
+  "native_p48": [
+    {
+      "pair_id": "P48",
+      "status": "success",
+      "error": "1148.2233810909145",
+      "num_inliers": "9"
+    }
+  ],
+  "native_ablation": [
+    {
+      "experiment": "Full_ProbabilityMap",
+      "pair_id": "A01",
+      "status": "success",
+      "error": "4.657976795045209"
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "pair_id": "A01",
+      "status": "success",
+      "error": "68.29960086113053"
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "pair_id": "A01",
+      "status": "success",
+      "error": "134.92678254886056"
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "pair_id": "A02",
+      "status": "success",
+      "error": "11.235663642566639"
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "pair_id": "A02",
+      "status": "success",
+      "error": "54.0779268812808"
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "pair_id": "A02",
+      "status": "success",
+      "error": "57.3507808771068"
+    },
+    {
+      "experiment": "Full_ProbabilityMap",
+      "pair_id": "A03",
+      "status": "success",
+      "error": "7.823944115929339"
+    },
+    {
+      "experiment": "Without_ProbabilityMap_SIFT",
+      "pair_id": "A03",
+      "status": "success",
+      "error": "21.600350266032628"
+    },
+    {
+      "experiment": "SIFT_Enhanced",
+      "pair_id": "A03",
+      "status": "success",
+      "error": "20.230001992868125"
+    }
+  ],
+  "training_started": false,
+  "full_FIRE_started": false,
+  "scientific_reconstruction_module_hashes_unchanged": true,
+  "external_trainer_launcher_help_test": "PASS, no fit called",
+  "published_FPE_table_reproduced": false,
+  "published_sigma5_generator_recovered": false
+}

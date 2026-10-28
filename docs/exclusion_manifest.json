@@ -1,0 +1,20 @@
+{
+  "scope": "Publication exclusions; originals and detailed inventories preserved privately",
+  "excluded_source_classes": [
+    "historical source and cached variants",
+    "archived variants",
+    "prior-method related_work",
+    "downloaded stitching source",
+    "original training/model exports outside supported release scope"
+  ],
+  "excluded_artifact_classes": [
+    "FIVES/FIRE images, vessel masks, control-point annotations",
+    "model/checkpoint arrays",
+    "original paper/drafts/archives",
+    "raw results and loss logs/images",
+    "private inventories, paths, environments, caches and credentials"
+  ],
+  "public_core_rights": "AUTHOR_CONFIRMED; MIT_APPROVED on 2026-10-29; independently licensed third-party materials are not relicensed",
+  "artifact_counts": "See excluded_artifact_summary.json; scoped discovered files, duplicates counted",
+  "policy": "No quarantined implementation, dataset or checkpoint was reintroduced. No original files deleted."
+}

@@ -1,0 +1,40 @@
+from pathlib import Path
+import os
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+CHECKPOINT_DIR = PROJECT_ROOT / "checkpoints"
+MODEL_PATH = Path(os.environ.get("PROBMAP_CHECKPOINT", str(CHECKPOINT_DIR / "2024-06-06 19.02.56_Model_heatmap_Unet.h5")))
+
+FIRE_ROOT = Path(os.environ.get("PROBMAP_FIRE_ROOT", str(PROJECT_ROOT / "data" / "FIRE")))
+FIRE_IMAGES_DIR = FIRE_ROOT / "Images"
+FIRE_GROUND_TRUTH_DIR = FIRE_ROOT / "Ground Truth"
+
+RESULTS_ROOT = Path(os.environ.get("PROBMAP_OUTPUT_DIR", str(PROJECT_ROOT / "results")))
+PROPOSED_RESULTS_DIR = RESULTS_ROOT / "proposed"
+VIS_DIR = PROPOSED_RESULTS_DIR / "vis"
+
+EXPERIMENT_NAME = "proposed"
+
+CNN_INPUT_SIZE = 480
+PROBABILITY_THRESHOLD = 80
+LOCAL_MAX_FILTER_SIZE = 10
+
+HOG_PATCH_SIZE = 16
+HOG_ORIENTATIONS = 8
+HOG_PIXELS_PER_CELL = (4, 4)
+HOG_CELLS_PER_BLOCK = (1, 1)
+HOG_DESCRIPTOR_DIM = 128
+
+RANSAC_THRESHOLD_PX = 20.0
+SUCCESS_THRESHOLD_PX = 25.0
+AUC_MAX_THRESHOLD_PX = 25
+
+FIRE_CATEGORIES = {
+    "A": 14,
+    "P": 49,
+    "S": 71,
+}
+
+SMALL_TEST_PAIRS = ("A01", "A02", "A03")

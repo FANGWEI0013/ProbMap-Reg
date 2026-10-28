@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-28",
+  "tests": 12,
+  "tests_passed": true,
+  "commands_passed": 14,
+  "python_files": 20,
+  "configuration_json_valid": true,
+  "environment": {
+    "python": "3.9.25",
+    "os": "Windows-10-10.0.26200-SP0",
+    "versions": {
+      "tensorflow": {
+        "provider": "tensorflow",
+        "distribution": "2.10.1",
+        "module": "2.10.1"
+      },
+      "keras": {
+        "provider": "keras",
+        "distribution": "2.10.0",
+        "module": "2.10.0"
+      },
+      "numpy": {
+        "provider": "numpy",
+        "distribution": "1.23.5",
+        "module": "1.23.5"
+      },
+      "opencv-python": {
+        "provider": "opencv-contrib-python",
+        "distribution": "4.8.1.78",
+        "module": "4.8.1"
+      },
+      "scipy": {
+        "provider": "scipy",
+        "distribution": "1.10.1",
+        "module": "1.10.1"
+      },
+      "matplotlib": {
+        "provider": "matplotlib",
+        "distribution": "3.7.5",
+        "module": "3.7.5"
+      }
+    }
+  },
+  "pip_check": "No broken requirements found",
+  "all_six_version_numbers_match": true,
+  "exact_opencv_python_distribution_tested": false,
+  "opencv_note": "Runtime provider is opencv-contrib-python 4.8.1.78; cv2 is 4.8.1. Minimal opencv-python wheel from requirements has not been separately installed/tested.",
+  "all_11_scientific_source_hashes_unchanged": true,
+  "external_inputs_available": true,
+  "inference_features": 44,
+  "registration": [
+    {
+      "pair_id": "A01",
+      "status": "success",
+      "error": "4.657976795045209",
+      "num_inliers": "22",
+      "num_points_1": "44",
+      "num_points_2": "53"
+    }
+  ],
+  "import_roots": [
+    "analyze_bootstrap_ci",
+    "argparse",
+    "bootstrap_statistics",
+    "collections",
+    "config",
+    "csv",
+    "cv2",
+    "importlib",
+    "keras",
+    "math",
+    "matplotlib",
+    "numpy",
+    "os",
+    "pathlib",
+    "run_ablation_probmap_vs_sift",
+    "runpy",
+    "scipy",
+    "subprocess",
+    "sys",
+    "tempfile",
+    "time",
+    "unittest",
+    "utils_eval",
+    "utils_features",
+    "utils_matching",
+    "utils_model",
+    "utils_transform",
+    "utils_vis"
+  ],
+  "fresh_dependency_install_performed": false,
+  "training_performed": false,
+  "full_FIRE_performed": false,
+  "commands": [
+    {
+      "id": "unit_tests_12",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_bootstrap_statistics",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\bootstrap_statistics.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_evaluate_fire",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\evaluate_fire.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_infer",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\infer.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_plot_success_curves",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\plot_success_curves.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_run_reconstruction",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\run_reconstruction.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_train_unet",
+      "argv": [
+        "python",
+        "-B",
+        ".\\scripts\\train_unet.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_engine_run_proposed.py",
+      "argv": [
+        "python",
+        "-B",
+        ".\\src\\reconstruction\\run_proposed.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "help_engine_run_ablation_probmap_vs_sift.py",
+      "argv": [
+        "python",
+        "-B",
+        ".\\src\\reconstruction\\run_ablation_probmap_vs_sift.py",
+        "--help"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "pip_check",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "dependency_and_module_imports",
+      "argv": [
+        "python",
+        "-B",
+        "-c",
+        "import importlib,json,platform,sys\nfrom importlib import metadata\nnames={'tensorflow':'tensorflow','keras':'keras','numpy':'numpy','opencv-python':'cv2','scipy':'scipy','matplotlib':'matplotlib'}\nversions={}\nfor key,value in names.items():\n    provider=key\n    try:version=metadata.version(provider)\n    except metadata.PackageNotFoundError:\n        if key!='opencv-python':raise\n        provider='opencv-contrib-python';version=metadata.version(provider)\n    versions[key]={'provider':provider,'distribution':version,'module':getattr(importlib.import_module(value),'__version__','unknown')}\nprint(json.dumps({'python':platform.python_version(),'os':platform.platform(),'versions':versions}))\nsys.path.insert(0,'src/reconstruction')\nimport config,utils_eval,utils_features,utils_matching,utils_model,utils_transform,utils_vis,run_proposed,run_ablation_probmap_vs_sift,analyze_bootstrap_ci,analyze_failure_cases\nimport tensorflow as tf\nprint('GPUS',len(tf.config.list_physical_devices('GPU')))\n"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "inference_A01",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/infer.py",
+        "--image",
+        "<FIRE_ROOT>\\Images\\A01_1.jpg",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>\\inference_A01"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "registration_A01",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/run_reconstruction.py",
+        "proposed",
+        "--checkpoint",
+        "<CHECKPOINT>",
+        "--fire-root",
+        "<FIRE_ROOT>",
+        "--output-dir",
+        "<OUTPUT_ROOT>\\registration_A01",
+        "--pair",
+        "A01",
+        "--no-vis"
+      ],
+      "returncode": 0
+    },
+    {
+      "id": "evaluate_A01",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/evaluate_fire.py",
+        "--raw-csv",
+        "<OUTPUT_ROOT>\\registration_A01\\proposed\\raw_pairs.csv",
+        "--output",
+        "<OUTPUT_ROOT>\\evaluation_A01.csv"
+      ],
+      "returncode": 0
+    }
+  ],
+  "source_authorship": "AUTHOR_CONFIRMED",
+  "license": "MIT_APPROVED",
+  "copyright_holder": "Wei Fang",
+  "initial_dependency_probe": "Exact opencv-python metadata lookup failed; verification was corrected to report the actual opencv-contrib-python provider. No package or algorithm was changed.",
+  "git_line_endings": "Original Windows CRLF source bytes preserved; CRLF-aware cached whitespace check passed without suppressing real whitespace checks.",
+  "license_approval_date": "2026-10-29",
+  "local_finalization": {
+    "date": "2026-10-29",
+    "unit_tests": {
+      "date": "2026-10-29",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "actual Desktop release candidate",
+      "returncode": 0,
+      "tests": 12,
+      "result": "PASS"
+    },
+    "staged_files": 68,
+    "license_included": true,
+    "all_20_python_files_unchanged": true,
+    "published_metadata_unchanged": true,
+    "LICENSE_bytes_unchanged": true,
+    "syntax_files": 20,
+    "configuration_json_valid": true,
+    "commit_authorized": false,
+    "commit_created": false,
+    "remote_created": false,
+    "pushed": false,
+    "visibility_changed": false
+  }
+}

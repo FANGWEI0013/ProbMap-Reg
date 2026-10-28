@@ -1,0 +1,90 @@
+[
+  {
+    "path": "src/reconstruction/analyze_bootstrap_ci.py",
+    "sha256": "8e7ff260720110383829febeab08c2b462830b76a7146dab1ab63785121faa82",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/analyze_failure_cases.py",
+    "sha256": "506f51a1c8ee1be6a8f932306039f9020e2c90c7f9ae0e04065ad409813087c9",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/config.py",
+    "sha256": "4e1471ebd99cd3a06efd9e86be8d4ec804ae32f02c63b164c1fffcb467b28a0c",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/run_ablation_probmap_vs_sift.py",
+    "sha256": "dbd235aa9ff66a658b13143ba9779a892d232f8a26ae424bb4a7d13da8db7784",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/run_proposed.py",
+    "sha256": "3e925adbac7d7ba25efe8ca455b3818b2c76673d085f319f58335f5924a28852",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_eval.py",
+    "sha256": "168e9d8e21c38401e6f10bec46c69505709a1c20266e9604861b4aacd3fa8c7c",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_features.py",
+    "sha256": "06bacb7a09188a442cb4b196a9674aefd51a33dbb4dcca97a60839b878eda913",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_matching.py",
+    "sha256": "4a87695642e19dc906daad68ca7a5a282afdc2c30a372144649ad642267630ae",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_model.py",
+    "sha256": "bb785df267973e5f4809a893e17b1fdf16433d72e4371f327924dbaa9105cf27",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_transform.py",
+    "sha256": "3bdb6d42f8eb550c4b3360edf3ff2844b03d98b8665b098ccd19c576df4bd156",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  },
+  {
+    "path": "src/reconstruction/utils_vis.py",
+    "sha256": "74ecc2b668fed5040986d6360008ee9800cd9143b0c7a7fcb34b8a2d1713f5ca",
+    "original_alias": "existing user Desktop ProbMap-Reg",
+    "scientific_logic_changed_since_round1": false,
+    "rights_status": "AUTHOR_CONFIRMED",
+    "confirmation_date": "2026-10-28"
+  }
+]

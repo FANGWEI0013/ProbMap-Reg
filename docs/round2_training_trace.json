@@ -1,0 +1,72 @@
+{
+  "splits": [
+    {
+      "split": "train",
+      "images": 480,
+      "labels": 480,
+      "matching_sorted_names": true,
+      "label_modes": {
+        "RGB": 480
+      },
+      "rgb_labels_with_equal_channels": 480,
+      "wrong_shapes": 0,
+      "min_range": [
+        0,
+        0
+      ],
+      "max_range": [
+        251,
+        255
+      ],
+      "identical_D_FIVES_label_copies": 480,
+      "archive_crc_match_count": 480
+    },
+    {
+      "split": "validation",
+      "images": 120,
+      "labels": 120,
+      "matching_sorted_names": true,
+      "label_modes": {
+        "L": 120
+      },
+      "rgb_labels_with_equal_channels": 0,
+      "wrong_shapes": 0,
+      "min_range": [
+        1,
+        3
+      ],
+      "max_range": [
+        190,
+        255
+      ],
+      "identical_D_FIVES_label_copies": 0,
+      "archive_crc_match_count": 120
+    }
+  ],
+  "checkpoint_weight_relation": {
+    "full_model_datasets": 48,
+    "weights_file_datasets": 48,
+    "all_weight_arrays_identical": true,
+    "optimizer_iterations": 24000,
+    "keras_version": "2.8.0",
+    "optimizer_config": {
+      "class_name": "Adam",
+      "config": {
+        "name": "Adam",
+        "learning_rate": 9.999999747378752e-05,
+        "decay": 0.0,
+        "beta_1": 0.8999999761581421,
+        "beta_2": 0.9990000128746033,
+        "epsilon": 1e-07,
+        "amsgrad": false
+      }
+    },
+    "output_activation": "linear"
+  },
+  "source_hashes": {
+    "main.txt": "f5cb0a64b2d2700ef60a2be8c5ebfdf0fc44d9e0c64ee12919346cb056aa5458",
+    "model.txt": "2954241ab4c0e202654c78ef2032c9c38bfa10785f526abda8c9929bd6f9cd2e"
+  },
+  "archive_label_crc": {},
+  "peak_profile_boundary": "Per-point coordinates and individual label profiles remain private; aggregate diagnostics cannot identify original Gaussian sigma."
+}

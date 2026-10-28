@@ -1,0 +1,8 @@
+# Tested runtime versions; clean installation still needs independent verification.
+# Python 3.9.25 / TensorFlow 2.10.1 / OpenCV 4.8.1 are paper-reported.
+tensorflow==2.10.1
+keras==2.10.0
+numpy==1.23.5
+opencv-python==4.8.1.78
+scipy==1.10.1
+matplotlib==3.7.5
